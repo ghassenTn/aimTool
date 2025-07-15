@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSH4X - تعرف علينا</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hack.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .news-container {
+            padding: 20px;
+            height: calc(100vh - 120px);
+            overflow-y: auto;
+        }
+        
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 0%, rgba(10, 40, 70, 0.8) 100%);
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 183, 255, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .faq-question {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            cursor: pointer;
+            background: linear-gradient(135deg, rgba(20, 20, 20, 0.9) 0%, rgba(10, 40, 70, 0.9) 100%);
+            border-bottom: 1px solid rgba(0, 183, 255, 0.3);
+        }
+        
+        .faq-question i {
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+            margin-left: 15px;
+        }
+        
+        .faq-question h3 {
+            margin: 0;
+            color: var(--white);
+            font-size: 1.1rem;
+        }
+        
+        .faq-answer {
+            padding: 15px;
+            color: var(--light-gray);
+            line-height: 1.6;
+        }
+        
+        .faq-answer p {
+            margin-top: 0;
+        }
+        
+        .faq-answer strong {
+            color: var(--primary-blue);
+        }
+        
+        .faq-answer ol {
+            padding-right: 20px;
+        }
+        
+        .faq-answer li {
+            margin-bottom: 10px;
+        }
+        
+        .contact-btn-container {
+            margin-top: 12px;
+            margin-bottom: 5px;
+        }
+        
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0078d4 0%, #005ea2 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contact-btn i {
+            margin-left: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-btn:hover {
+            background: linear-gradient(135deg, #0089f5 0%, #0078d4 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media (max-width: 480px) {
+            .faq-question h3 {
+                font-size: 1rem;
+            }
+            
+            .faq-question i {
+                font-size: 1.2rem;
+                margin-left: 10px;
+            }
+            
+            .faq-answer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hack-container">
+        <!-- شريط التنقل العلوي -->
+        <header class="hack-header">
+            <div class="header-left">
+                <h1>تعرف علينا</h1>
+            </div>
+            <div class="header-right">
+                <!-- تم إزالة الأيقونات من شريط التنقل العلوي -->
+            </div>
+        </header>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="news-container">
+            <div class="faq-section">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>ما هي نسبة أمان الهاك؟</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>أمان عالي جداً بنسبة 98%</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-money-bill"></i>
+                        <h3>هل الهاك مدفوع وكم تكلفته؟</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، تكلفة الشراء 30$. للشراء اذهب إلى قسم <strong>الاشتراك</strong> في الشريط السفلي واضغط على زر <strong>تواصل للشراء</strong>.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-gift"></i>
+                        <h3>هل يمكنني الحصول على نسخة مجانية؟</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، يمكنك الحصول على فترة تجريبية مجانية لمدة 6 أيام تشمل جميع المميزات. بعد انتهاء الفترة التجريبية يمكنك الشراء من خلال التواصل معنا.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-key"></i>
+                        <h3>كيف يمكنني الحصول على الفترة المجانية؟</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>يمكنك الحصول عليها بإحدى طريقتين:</p>
+                        <ol>
+                            <li>
+                                <strong>1️⃣ التفعيل اليدوي (الطريقة الأسهل):</strong>
+                                <ul style="list-style-type: none; padding-right: 10px; margin-top: 8px;">
+                                    <li>اضغط على أيقونة الدخول ثم اختر زر "تجريبي".</li>
+                                    <li>سيتم إعطاؤك مفتاح تجريبي لمدة 6 أيام.</li>
+                                    <li>بعد الدخول، سيظهر لك تنبيه خلال ثوانٍ يحتوي على خيار تفعيل النسخة.</li>
+                                    <li>اضغط على التنبيه واتبع الخطوات كما هو موضح في الشرح، وسيتم التفعيل مباشرة.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>2️⃣ قمت بتنفيذ عرض وواجهت مشكلة:</strong>
+                                <ul style="list-style-type: none; padding-right: 10px; margin-top: 8px;">
+                                    <li>إذا قمت بتنفيذ عرض وواجهت أي مشكلة، يمكنك التواصل معنا مباشرة.</li>
+                                    <li>فقط أرسل صورة أو فيديو يوضح المشكلة، وسنقوم بمراجعتها وتفعيل الهاك لك مجانًا بالكامل وبدون عروض أو تحقق.</li>
+                                    <li>تشمل الفترة التجريبية جميع المميزات وتستمر لمدة 6 أيام كاملة.</li>
+                                </ul>
+                                <div class="contact-btn-container">
+                                    <a href="https://t.me/PSH4X4" class="contact-btn" target="_blank">
+                                        <i class="fab fa-telegram-plane"></i>
+                                        تواصل مباشر
+                                    </a>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- شريط الأدوات السفلي -->
+        <footer class="hack-footer">
+            <button class="footer-btn" id="home-btn">
+                <i class="fas fa-home"></i>
+                <span>الرئيسية</span>
+            </button>
+            <button class="footer-btn active" id="stats-btn">
+                <i class="fas fa-info-circle"></i>
+                <span>تعرف علينا</span>
+            </button>
+            <button class="footer-btn premium-btn" id="premium-btn">
+                <i class="fas fa-crown"></i>
+                <span>الاشتراك</span>
+            </button>
+            <button class="footer-btn" id="profile-btn">
+                <i class="fas fa-user"></i>
+                <span>الملف</span>
+            </button>
+        </footer>
+    </div>
+
+    <script src="js/notification.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/hack-transitions.js"></script>
+</body>
+</html>

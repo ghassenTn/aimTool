@@ -1,0 +1,53 @@
+/* تنسيقات الانتقالات */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تأثير ظهور تدريجي للعناصر */
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+/* تأخير للعناصر المختلفة */
+.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-2 {
+    animation-delay: 0.2s;
+}
+
+.delay-3 {
+    animation-delay: 0.3s;
+}
+
+.delay-4 {
+    animation-delay: 0.4s;
+}
+
+.delay-5 {
+    animation-delay: 0.5s;
+}
+
+/* تنسيق الصفحة عند التحميل */
+body.loading {
+    overflow: hidden;
+}
+
+/* تنسيق الصفحة بأكملها */
+.hack-container {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.hack-container.loaded {
+    opacity: 1;
+}

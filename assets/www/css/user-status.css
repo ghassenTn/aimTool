@@ -1,0 +1,60 @@
+/* أنماط حالة المستخدم */
+.user-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 4px 12px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.user-status-text {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.user-status-badge {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.user-status-badge.free {
+    background-color: #607d8b;
+    color: white;
+}
+
+.user-status-badge.premium {
+    background-color: #ffc107;
+    color: #333;
+    animation: pulse-gold 2s infinite;
+}
+
+/* تأثير نبض للشارة المميزة */
+@keyframes pulse-gold {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(255, 193, 7, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+    }
+}
+
+/* تعديلات للشاشات الصغيرة */
+@media (max-width: 480px) {
+    .user-status-text {
+        display: none;
+    }
+    
+    .user-status {
+        padding: 4px 8px;
+    }
+}

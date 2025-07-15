@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSH4X - الاشتراك</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/subscription.css">
+    <link rel="stylesheet" href="css/trial-key.css">
+    <link rel="stylesheet" href="css/premium-features.css">
+    <link rel="stylesheet" href="css/hack.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .subscription-container {
+            padding: 20px;
+            height: calc(100vh - 120px);
+            overflow-y: auto;
+        }
+        
+        /* تنسيقات شريط الدعم */
+        .support-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(10, 40, 70, 0.95) 100%);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(0, 183, 255, 0.3);
+        }
+        
+        .support-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .support-logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary-blue);
+        }
+        
+        .support-info {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .support-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--white);
+            margin: 0;
+        }
+        
+        .support-status {
+            font-size: 0.8rem;
+            color: var(--light-blue);
+        }
+        
+        .support-contact {
+            background: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .support-contact:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0, 183, 255, 0.7);
+        }
+        
+        /* تنسيقات للهواتف المحمولة */
+        @media (max-width: 480px) {
+            .support-bar {
+                padding: 10px;
+            }
+            
+            .support-logo {
+                width: 35px;
+                height: 35px;
+            }
+            
+            .support-title {
+                font-size: 1rem;
+            }
+            
+            .support-contact {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hack-container">
+        <!-- شريط التنقل العلوي -->
+        <header class="hack-header">
+            <div class="header-left">
+                <h1>الاشتراك</h1>
+            </div>
+            <div class="header-right">
+                <!-- تم إزالة الأيقونات من شريط التنقل العلوي -->
+            </div>
+        </header>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="subscription-container">
+            <!-- شريط الدعم -->
+            <div class="support-bar">
+                <div class="support-left">
+                    <img src="images/psh4x-logo.png" alt="PSH4X Logo" class="support-logo">
+                    <div class="support-info">
+                        <h3 class="support-title">Support PSH4X</h3>
+                        <span class="support-status">تواصل معنا للشراء عبر التيلجرام</span>
+                    </div>
+                </div>
+                <a href="https://t.me/PSH4X4" class="support-contact" title="تواصل معنا">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+            </div>
+            
+            <!-- محتوى صفحة الاشتراك -->
+            <div class="subscription-header">
+                <h2>اشترك الآن في PSH4X</h2>
+                <p>احصل على جميع الميزات المتقدمة والتحديثات الحصرية</p>
+            </div>
+            
+            <div class="subscription-plans">
+                <!-- خطة الاشتراك الموحدة -->
+                <div class="plan-card featured premium-plan">
+                    <div class="plan-badge">العرض الحصري</div>
+                    <div class="plan-header">
+                        <h3>خطة PSH4X الشاملة</h3>
+                        <div class="plan-price">$30.00</div>
+                        <div class="plan-duration">شهرياً</div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <span>جميع المزايا الأساسية</span>
+                        </div>
+                        <div class="plan-feature premium-feature">
+                            <i class="fas fa-check"></i>
+                            <span>جميع ميزات التصويب</span>
+                            <span class="premium-badge">مدفوع</span>
+                        </div>
+                        <div class="plan-feature premium-feature">
+                            <i class="fas fa-check"></i>
+                            <span>جميع مزايا تخصيص العرض</span>
+                            <span class="premium-badge">مدفوع</span>
+                        </div>
+                        <div class="plan-feature premium-feature">
+                            <i class="fas fa-check"></i>
+                            <span>خصائص إضافية</span>
+                            <span class="premium-badge">مدفوع</span>
+                        </div>
+
+                        <div class="plan-feature premium-feature">
+                            <i class="fas fa-check"></i>
+                            <span>تحديثات حصرية</span>
+                            <span class="premium-badge">مدفوع</span>
+                        </div>
+                        <div class="plan-feature premium-feature">
+                            <i class="fas fa-check"></i>
+                            <span>دعم فني مخصص</span>
+                            <span class="premium-badge">مدفوع</span>
+                        </div>
+                    </div>
+                    <a href="https://t.me/PSH4X4" target="_blank" class="btn blue-btn">
+                        اشترك الآن
+                    </a>
+                </div>
+            </div>
+            
+
+        </main>
+
+        <!-- شريط الأدوات السفلي -->
+        <footer class="hack-footer">
+            <button class="footer-btn" id="home-btn">
+                <i class="fas fa-home"></i>
+                <span>الرئيسية</span>
+            </button>
+            <button class="footer-btn" id="stats-btn">
+                <i class="fas fa-info-circle"></i>
+                <span>تعرف علينا</span>
+            </button>
+            <button class="footer-btn premium-btn active" id="premium-btn">
+                <i class="fas fa-crown"></i>
+                <span>الاشتراك</span>
+            </button>
+            <button class="footer-btn" id="profile-btn">
+                <i class="fas fa-user"></i>
+                <span>الملف</span>
+            </button>
+        </footer>
+    </div>
+
+    <!-- النوافذ المنبثقة -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>تفعيل PSH4X</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="login-form">
+                    <div class="activation-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="form-group activation-key">
+                        <input type="text" id="activation-key" placeholder="أضف مفتاح التفعيل" class="form-control">
+                        <button class="paste-btn" id="paste-btn" title="لصق تلقائي">
+                            <i class="fas fa-paste"></i>
+                        </button>
+                    </div>
+                    <div class="activation-buttons">
+                        <button class="btn primary-btn" id="login-submit">
+                            <i class="fas fa-check-circle"></i> تفعيل
+                        </button>
+                        <button class="btn trial-btn" id="trial-btn">
+                            <i class="fas fa-hourglass-half"></i> تجريبي
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- نافذة المفتاح التجريبي -->
+    <div class="modal" id="trial-key-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>احصل على مفتاح تجريبي</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- محتوى الشاشة الأولى -->
+                <div class="trial-key-content">
+                    <div class="trial-info">
+                        <h4>احصل على مفتاح تجريبي لهاك PSH4X مجانًا</h4>
+                        <p>فترة تجريبية مدة 6 أيام</p>
+                        <p>يمكنك الحصول على المفتاح لمرة واحدة فقط</p>
+                    </div>
+                    <button class="btn special-btn" id="get-trial-key-btn">
+                        <i class="fas fa-gift"></i> احصل على المفتاح
+                    </button>
+                </div>
+                
+                <!-- محتوى شاشة الهدية -->
+                <div class="gift-content">
+                    <h4>اضغط على هديتك</h4>
+                    <button class="gift-btn" id="gift-btn">
+                        <i class="fas fa-gift gift-icon"></i>
+                    </button>
+                </div>
+                
+                <!-- محتوى شاشة المفتاح -->
+                <div class="key-content">
+                    <div class="key-display-container">
+                        <h4>مفتاح التفعيل الخاص بك</h4>
+                        <div class="key-display" id="trial-key-display"></div>
+                        <p class="key-info">تم نسخ المفتاح تلقائيًا</p>
+                    </div>
+                    <div class="key-actions">
+                        <button class="btn copy-btn" id="copy-key-btn">
+                            <i class="fas fa-copy"></i> نسخ المفتاح
+                        </button>
+                        <button class="btn primary-btn" id="return-to-login-btn">
+                            <i class="fas fa-sign-in-alt"></i> تفعيل الآن
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/notification.js"></script>
+    <script src="js/subscription.js"></script>
+    <script src="js/trial-keys.js"></script>
+    <script src="js/activation-effect.js"></script>
+    <script src="js/premium-features.js"></script>
+    <script src="js/hack-transitions.js"></script>
+</body>
+</html>

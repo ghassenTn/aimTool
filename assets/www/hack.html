@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSH4X - واجهة الهاك</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hack.css">
+    <link rel="stylesheet" href="css/trial-key.css">
+    <link rel="stylesheet" href="css/premium-features.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <link rel="stylesheet" href="css/notification-badge.css">
+    <link rel="stylesheet" href="css/verification-modal.css">
+    <link rel="stylesheet" href="css/launch-button.css">
+    <link rel="stylesheet" href="css/floating-logo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="hack-container">
+        <!-- شريط التنقل العلوي -->
+        <header class="hack-header">
+            <div class="logo-small">
+                <img src="images/psh4x-logo.png" alt="PSH4X Logo">
+            </div>
+            <div class="header-title">PSH4X</div>
+            <div class="header-actions">
+                <!-- زر تسجيل الدخول/الخروج -->
+                <button class="header-btn" id="login-btn" title="تسجيل الدخول">
+                    <i class="fas fa-sign-in-alt"></i>
+                </button>
+                
+                <!-- زر التنبيهات -->
+                <div class="notification-container">
+                    <button class="header-btn" id="notification-btn">
+                        <i class="fas fa-bell"></i>
+                    </button>
+                    <div class="notification-dropdown">
+                        <div class="notification-header">
+                            <h3>التنبيهات</h3>
+                        </div>
+                        <div class="notification-list">
+                            <div class="empty-notification">
+                                <i class="fas fa-bell-slash"></i>
+                                <p>لا توجد تنبيهات جديدة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- القسم الرئيسي -->
+        <main class="hack-main">
+            <div class="status-panel">
+                <div class="status-item connected">
+                    <i class="fas fa-link status-icon"></i>
+                    <span class="status-text">متصل بالسيرفر</span>
+                </div>
+                <div class="status-item">
+                    <i class="fas fa-shield-alt status-icon"></i>
+                    <span class="status-text">الحماية نشطة</span>
+                </div>
+            </div>
+
+            <!-- أقسام الميزات -->
+            <div class="features-container">
+                <!-- قسم التصويب -->
+                <div class="feature-section">
+                    <div class="section-header">
+                        <i class="fas fa-crosshairs"></i>
+                        <h2>ميزات التصويب</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="feature-toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="aim-assist">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="feature-name">مساعدة التصويب</span>
+                            <span class="premium-badge">مدفوع</span>
+                        </div>
+                        <div class="feature-toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="perfect-shot">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="feature-name">التصويب التلقائي</span>
+                            <span class="premium-badge">مدفوع</span>
+                        </div>
+                        <div class="feature-toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="trajectory">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="feature-name">التسديد التلقائي باللمس</span>
+                            <span class="premium-badge">مدفوع</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- قسم الميزات الإضافية -->
+                <div class="feature-section">
+                    <div class="section-header">
+                        <i class="fas fa-eye"></i>
+                        <h2>تخصيص العرض</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="feature-toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="always-win">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="feature-name">عرض جميع الخطوط</span>
+                            <span class="premium-badge">مدفوع</span>
+                        </div>
+                        <div class="feature-toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="unlimited-time">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="feature-name">عرض خط الكرة البيضاء والهدف</span>
+                            <span class="premium-badge">مدفوع</span>
+                        </div>
+                        <div class="feature-toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="anti-ban">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="feature-name">عرض خط الكرة البيضاء فقط</span>
+                            <span class="premium-badge">مدفوع</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- قسم المظهر -->
+                <div class="feature-section">
+                    <div class="section-header">
+                        <i class="fas fa-video"></i>
+                        <h2>خصائص إضافية</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="feature-toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="custom-cues">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="feature-name">إظهار الهاك في التسجيل</span>
+                            <span class="premium-badge">مدفوع</span>
+                        </div>
+                        <div class="feature-toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="custom-tables">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="feature-name">إخفاء الهاك في التسجيل</span>
+                            <span class="premium-badge">مدفوع</span>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- زر فتح الهاك (متاح فقط للمستخدمين المدفوعين) -->
+                <div class="launch-hack-container premium-only" style="display: none !important;" data-premium-only="true">
+                    <button id="launch-hack-btn" class="launch-hack-btn premium-feature">
+                        <i class="fas fa-rocket"></i>
+                        <span>تشغيل الهاك</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- شريط الأدوات السفلي -->
+        <footer class="hack-footer">
+            <button class="footer-btn active" id="home-btn">
+                <i class="fas fa-home"></i>
+                <span>الرئيسية</span>
+            </button>
+            <button class="footer-btn" id="stats-btn">
+                <i class="fas fa-info-circle"></i>
+                <span>تعرف علينا</span>
+            </button>
+            <button class="footer-btn premium-btn" id="premium-btn">
+                <i class="fas fa-crown"></i>
+                <span>الاشتراك</span>
+            </button>
+            <button class="footer-btn" id="profile-btn">
+                <i class="fas fa-user"></i>
+                <span>الملف</span>
+            </button>
+        </footer>
+    </div>
+
+    <!-- النوافذ المنبثقة -->
+    <div class="modal" id="settings-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>الإعدادات</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-item">
+                    <span>اللغة:</span>
+                    <select id="language-select">
+                        <option value="ar" selected>العربية</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+                <div class="settings-item">
+                    <span>الوضع الليلي:</span>
+                    <label class="switch">
+                        <input type="checkbox" id="dark-mode" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="settings-item">
+                    <span>الإشعارات:</span>
+                    <label class="switch">
+                        <input type="checkbox" id="notifications">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <button class="btn primary-btn" id="save-settings">
+                    <i class="fas fa-save"></i> حفظ الإعدادات
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- نافذة تسجيل الدخول -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>تفعيل PSH4X</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="login-form">
+                    <div class="activation-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="form-group activation-key">
+                        <input type="text" id="activation-key" placeholder="أضف مفتاح التفعيل" class="form-control">
+                        <button class="paste-btn" id="paste-btn" title="لصق تلقائي">
+                            <i class="fas fa-paste"></i>
+                        </button>
+                    </div>
+                    <div class="activation-buttons">
+                        <button class="btn primary-btn" id="login-submit">
+                            <i class="fas fa-check-circle"></i> تفعيل
+                        </button>
+                        <button class="btn trial-btn" id="trial-btn">
+                            <i class="fas fa-hourglass-half"></i> تجريبي
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- نافذة المفتاح التجريبي -->
+    <div class="modal" id="trial-key-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>احصل على مفتاح تجريبي</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- محتوى الشاشة الأولى -->
+                <div class="trial-key-content">
+                    <div class="trial-info">
+                        <h4>احصل على مفتاح تجريبي لهاك PSH4X مجانًا</h4>
+                        <p>فترة تجريبية مدة 6 أيام</p>
+                        <p>يمكنك الحصول على المفتاح لمرة واحدة فقط</p>
+                    </div>
+                    <button class="btn special-btn" id="get-trial-key-btn">
+                        <i class="fas fa-gift"></i> احصل على المفتاح
+                    </button>
+                </div>
+                
+                <!-- محتوى شاشة الهدية -->
+                <div class="gift-content">
+                    <h4>اضغط على هديتك</h4>
+                    <button class="gift-btn" id="gift-btn">
+                        <i class="fas fa-gift gift-icon"></i>
+                    </button>
+                </div>
+                
+                <!-- محتوى شاشة المفتاح -->
+                <div class="key-content">
+                    <div class="key-display-container">
+                        <h4>مفتاح التفعيل الخاص بك</h4>
+                        <div class="key-display" id="trial-key-display"></div>
+                        <p class="key-info">تم نسخ المفتاح تلقائيًا</p>
+                    </div>
+                    <div class="key-actions">
+                        <button class="btn copy-btn" id="copy-key-btn">
+                            <i class="fas fa-copy"></i> نسخ المفتاح
+                        </button>
+                        <button class="btn primary-btn" id="return-to-login-btn">
+                            <i class="fas fa-sign-in-alt"></i> تفعيل الآن
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- قسم المزايا المدفوعة -->
+    <div class="feature-section">
+        <div class="section-header">
+            <i class="fas fa-crown"></i>
+            <h2>خصائص إضافية</h2>
+        </div>
+        <div class="section-content">
+            <div class="feature-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="show-hack-recording" disabled>
+                    <span class="slider"></span>
+                </label>
+                <span class="feature-name">إظهار الهاك في التسجيل</span>
+                <span class="premium-badge">مدفوع</span>
+            </div>
+            <div class="feature-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="hide-hack-recording" disabled>
+                    <span class="slider"></span>
+                </label>
+                <span class="feature-name">إخفاء الهاك في التسجيل</span>
+                <span class="premium-badge">مدفوع</span>
+            </div>
+            <div class="feature-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="auto-aim" disabled>
+                    <span class="slider"></span>
+                </label>
+                <span class="feature-name">تصويب تلقائي متقدم</span>
+                <span class="premium-badge">مدفوع</span>
+            </div>
+            <div class="feature-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="wall-hack" disabled>
+                    <span class="slider"></span>
+                </label>
+                <span class="feature-name">رؤية عبر الجدران</span>
+                <span class="premium-badge">مدفوع</span>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- شريط الأدوات السفلي -->
+<footer class="hack-footer">
+    <button class="footer-btn active" id="home-btn">
+        <i class="fas fa-home"></i>
+        <span>الرئيسية</span>
+    </button>
+    <button class="footer-btn" id="stats-btn">
+        <i class="fas fa-info-circle"></i>
+        <span>تعرف علينا</span>
+    </button>
+    <button class="footer-btn premium-btn" id="premium-btn">
+        <i class="fas fa-crown"></i>
+        <span>الاشتراك</span>
+    </button>
+    <button class="footer-btn" id="profile-btn">
+        <i class="fas fa-user"></i>
+        <span>الملف</span>
+    </button>
+</footer>
+
+<!-- النوافذ المنبثقة -->
+<div class="modal" id="settings-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>الإعدادات</h3>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="settings-item">
+                <span>اللغة:</span>
+                <select id="language-select">
+                    <option value="ar" selected>العربية</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <div class="settings-item">
+                <span>الوضع الليلي:</span>
+                <label class="switch">
+                    <input type="checkbox" id="dark-mode" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="settings-item">
+                <span>الإشعارات:</span>
+                <label class="switch">
+                    <input type="checkbox" id="notifications">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <button class="btn primary-btn" id="save-settings">
+                <i class="fas fa-save"></i> حفظ الإعدادات
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- نافذة تسجيل الدخول -->
+<div class="modal" id="login-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>تفعيل PSH4X</h3>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="login-form">
+                <div class="activation-icon">
+                    <i class="fas fa-key"></i>
+                </div>
+                <div class="form-group activation-key">
+                    <input type="text" id="activation-key" placeholder="أضف مفتاح التفعيل" class="form-control">
+                    <button class="paste-btn" id="paste-btn" title="لصق تلقائي">
+                        <i class="fas fa-paste"></i>
+                    </button>
+                </div>
+                <div class="activation-buttons">
+                    <button class="btn primary-btn" id="login-submit">
+                        <i class="fas fa-check-circle"></i> تفعيل
+                    </button>
+                    <button class="btn trial-btn" id="trial-btn">
+                        <i class="fas fa-hourglass-half"></i> تجريبي
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- نافذة المفتاح التجريبي -->
+<div class="modal" id="trial-key-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>احصل على مفتاح تجريبي</h3>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <!-- محتوى الشاشة الأولى -->
+            <div class="trial-key-content">
+                <div class="trial-info">
+                    <h4>احصل على مفتاح تجريبي لهاك PSH4X مجانًا</h4>
+                    <p>فترة تجريبية مدة 6 أيام</p>
+                    <p>يمكنك الحصول على المفتاح لمرة واحدة فقط</p>
+                </div>
+                <button class="btn special-btn" id="get-trial-key-btn">
+                    <i class="fas fa-gift"></i> احصل على المفتاح
+                </button>
+            </div>
+
+            <!-- محتوى شاشة الهدية -->
+            <div class="gift-content">
+                <h4>اضغط على هديتك</h4>
+                <button class="gift-btn" id="gift-btn">
+                    <i class="fas fa-gift gift-icon"></i>
+                </button>
+            </div>
+
+            <!-- محتوى شاشة المفتاح -->
+            <div class="key-content">
+                <div class="key-display-container">
+                    <h4>مفتاح التفعيل الخاص بك</h4>
+                    <div class="key-display" id="trial-key-display"></div>
+                    <p class="key-info">تم نسخ المفتاح تلقائيًا</p>
+                </div>
+                <div class="key-actions">
+                    <button class="btn copy-btn" id="copy-key-btn">
+                        <i class="fas fa-copy"></i> نسخ المفتاح
+                    </button>
+                    <button class="btn primary-btn" id="return-to-login-btn">
+                        <i class="fas fa-sign-in-alt"></i> تفعيل الآن
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/hack.js"></script>
+<script src="js/hack-transitions.js"></script>
+<script src="js/trial-keys.js"></script>
+<script src="js/notification.js"></script>
+<script src="js/activation-effect.js"></script>
+<script src="js/verification-modal.js"></script>
+<script src="js/floating-logo.js"></script>
+<script src="js/launch-hack.js"></script>
+<script src="js/premium-features.js"></script>
+</body>
+</html>

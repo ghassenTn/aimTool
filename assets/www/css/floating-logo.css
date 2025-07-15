@@ -1,0 +1,226 @@
+/* أنماط الشعار العائم */
+.floating-logo-container {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    z-index: 9999;
+    cursor: move;
+    user-select: none;
+    transition: transform 0.1s ease;
+    display: none; /* مخفي افتراضيًا */
+}
+
+.floating-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+    animation: glow 2s infinite alternate;
+    pointer-events: none; /* يسمح بالنقر من خلال الصورة للتحكم في الحاوية */
+}
+
+/* تأثير توهج للشعار */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 25px rgba(0, 255, 255, 0.9), 0 0 40px rgba(0, 255, 255, 0.5);
+    }
+}
+
+/* تأثير عند السحب */
+.floating-logo-container.dragging {
+    transition: none;
+    transform: scale(1.05);
+}
+
+/* زر إغلاق الشعار العائم */
+.close-floating-logo {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 24px;
+    height: 24px;
+    background-color: #ff3333;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+}
+
+.close-floating-logo:hover {
+    background-color: #ff0000;
+}
+
+/* أنماط التنبيهات */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 10000;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    direction: rtl;
+    color: white;
+    max-width: 300px;
+}
+
+.notification.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* تنسيقات للتنبيهات الثابتة */
+.notification.persistent {
+    border-right: 3px solid #00c851;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(0, 200, 81, 0.5);
+    }
+    100% {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.notification i {
+    font-size: 1.2em;
+}
+
+/* تنسيقات أنواع الإشعارات */
+.notification.info i {
+    color: #0088ff;
+}
+
+.notification.success i {
+    color: #00c851;
+}
+
+.notification.warning i {
+    color: #ffbb33;
+}
+
+.notification.error i {
+    color: #ff4444;
+}
+
+.notification.success {
+    background-color: #28a745;
+    border-right: 5px solid #1e7e34;
+}
+
+.notification.error {
+    background-color: #dc3545;
+    border-right: 5px solid #bd2130;
+}
+
+.notification.warning {
+    background-color: #ffc107;
+    border-right: 5px solid #d39e00;
+    color: #333;
+}
+
+.notification.info {
+    background-color: #17a2b8;
+    border-right: 5px solid #138496;
+}
+
+/* أنماط تنبيه تفعيل الهاك على لعبة 8 Ball Pool */
+.hack-confirmation-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hack-confirmation-modal.show {
+    opacity: 1;
+}
+
+.hack-confirmation-content {
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    text-align: center;
+    border: 1px solid #00ffff;
+    color: white;
+    direction: rtl;
+}
+
+.hack-confirmation-content h3 {
+    margin-top: 0;
+    color: #00ffff;
+    font-size: 1.5em;
+}
+
+.hack-confirmation-content p {
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+.hack-confirmation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.hack-confirm-btn, .hack-cancel-btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 1em;
+}
+
+.hack-confirm-btn {
+    background-color: #00ffff;
+    color: #000;
+}
+
+.hack-confirm-btn:hover {
+    background-color: #00cccc;
+    transform: scale(1.05);
+}
+
+.hack-cancel-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+.hack-cancel-btn:hover {
+    background-color: #555;
+}

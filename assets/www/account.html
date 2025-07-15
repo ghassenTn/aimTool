@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSH4X - معلومات الحساب</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hack.css">
+    <link rel="stylesheet" href="css/notification.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="hack-container">
+        <!-- شريط التنقل العلوي -->
+        <header class="hack-header">
+            <div class="header-left">
+                <h1>معلومات الحساب</h1>
+            </div>
+            <div class="header-right">
+                <!-- تم إزالة الأيقونات من شريط التنقل العلوي -->
+            </div>
+        </header>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="account-page">
+            <!-- تم حذف شريط معلومات الحساب -->
+            
+            <div class="account-info-container">
+                <div class="account-info-card">
+                    <div class="card-header">
+                        <h3>حالة الحساب</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-item">
+                            <div class="info-label">نوع الحساب:</div>
+                            <div class="info-value">
+                                <span class="account-type-badge premium">مدفوع</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">حالة التفعيل:</div>
+                        </div>
+                        <div class="info-item activation-notice">
+                            <div class="notice-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="notice-text" style="color: #ff5500; font-weight: bold;">فعل حسابك لتشغيل الهاك</div>
+                        </div>
+                        <div class="info-item">
+                            <button class="btn primary-btn" id="activate-account-btn" style="width: 100%; margin-top: 10px;">
+                                <i class="fas fa-key"></i> تفعيل الحساب
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="account-info-card">
+                    <div class="card-header">
+                        <h3>أمان الحساب</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-item">
+                            <div class="info-label">مستوى الأمان:</div>
+                            <div class="info-value security-level">
+                                <div class="security-meter">
+                                    <div class="security-meter-fill" id="security-meter-fill"></div>
+                                </div>
+                                <div class="security-percentage" id="security-percentage">98%</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">حالة الحماية:</div>
+                            <div class="info-value">
+                                <span class="security-status active">
+                                    <i class="fas fa-shield-alt"></i> نشطة
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- تم حذف قسم إحصائيات الاستخدام -->
+            </div>
+        </main>
+
+        <!-- الشريط السفلي -->
+        <footer class="hack-footer">
+            <button class="footer-btn" id="home-btn">
+                <i class="fas fa-home"></i>
+                <span>الرئيسية</span>
+            </button>
+            <button class="footer-btn" id="about-btn">
+                <i class="fas fa-info-circle"></i>
+                <span>تعرف علينا</span>
+            </button>
+            <button class="footer-btn premium-btn" id="premium-btn">
+                <i class="fas fa-crown"></i>
+                <span>الاشتراك</span>
+            </button>
+            <button class="footer-btn active" id="profile-btn">
+                <i class="fas fa-user"></i>
+                <span>الملف</span>
+            </button>
+        </footer>
+    </div>
+
+    <!-- نافذة تسجيل الدخول -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>تسجيل الدخول</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="login-form">
+                    <div class="form-group">
+                        <label for="activation-key">مفتاح التفعيل</label>
+                        <div class="input-group">
+                            <input type="text" id="activation-key" placeholder="أدخل مفتاح التفعيل الخاص بك" dir="ltr">
+                            <button class="paste-btn" id="paste-key">
+                                <i class="fas fa-paste"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- تم حذف أزرار التفعيل والنسخة التجريبية -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/hack.js"></script>
+    <script src="js/notification.js"></script>
+    <script src="js/account.js"></script>
+</body>
+</html>
